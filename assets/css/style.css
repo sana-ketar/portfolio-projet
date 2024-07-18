@@ -1,93 +1,117 @@
+ *{
+  outline: none;
+  box-sizing: border-box;
+} 
+
 body{
-    background-color: white;
     font-family: "Open Sans";
     display: grid;
-    grid-template-columns: 3;
-    grid-template-rows: 4;
     row-gap: 20px;
 }
-/*header*/
-header{
-    background-color:#e5e5e5;
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
+
+/* !!!!!!!!!!!!!! SYRINE header !!!!!!!!!!!!!! */
+
+header {
+  background-color: #d6ccc2;
+  color: white;
+  padding: 10px 0;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
 }
-#logo {
-    width: 80px;
-  }
+
+.containerr  {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo img{
+  width: 100px;
+}
+
+.logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  width: 80px;
+}
+/* !!!!!!!!!!!!!! SYRINE header NAVIGATEUR !!!!!!!!!!!!!! */
+
+nav a {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+#espace {
+  word-spacing: 20px;
+  
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+/* !!!!!!!!!!!!!! SYRINE header NAVIGATEUR !!!!!!!!!!!!!! */
+
+/* !!!!!!!!!!!!!! SYRINE header FORMULAIRE DE CONTACT !!!!!!!!!!!!!! */
+
+#maphoto {
+  width: 10%;
+
+}
+
+.form-container {
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #a98467;
+  border-radius: 5px;
+  display: grid;
+}
+#maphoto{
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+.controls{
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+.form-group input, .form-group textarea {
+  width: 50%%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.text-primary {
+  color: #a98467
+}
+.btn-send {
+  background-color: #a98467;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-send button:hover {
+  background-color: #ccc;
+}
 
 
-  nav {
-    background-color:#e5e5e5;
+#contactForm h2 {
     text-align: center;
-    grid-column: 2 / 4;
-    grid-row: 1 / 2;
-    align-items: center;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    margin: 0 10px;
-    display: flex;
-  }
-  
-  nav ul li {
-    margin: 0%;
-  }
-  
-  nav ul li a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
-  }
-  
-  nav ul li a:hover {
-    background-color: #ffd60a;
-  }
-  
-#photoaccueil{
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-    background-color: #f8f9fa;
-}
-
-#apropos{
-    grid-column: 2 / 4;
-    grid-row: 2 / 3;
-}
-
-#apropos p{
-    margin: 5%;
-    padding: 20%;
-    border: 2px  solid #0652E9;
-    border-radius: 80PX;
-    background-color: #f8f9fa;
-    
-}
-
-.contact {
-background-color: #ffd60a;
-color: black;
-padding: 30%;
-border-radius: 10px;
-margin: 10%;
-margin-top: 10%;
-padding: 10%;
-border: 2px  solid #E5E5E5;
-width: 200%;
-max-width: 900px;
-opacity: 0.7;
-
-
-}
-
-
-.contact h2 {
-
-    margin-bottom: 20px;
-    color:black;
 }
 
 .contact-form label {
@@ -107,7 +131,7 @@ opacity: 0.7;
 }
 
 .contact-form button {
-    background-color: #4CAF50;
+    background-color: #a98467;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -117,124 +141,100 @@ opacity: 0.7;
 }
 
 .contact-form button:hover {
-    background-color: #45a049;
-}
+    background-color: #a98467;
+} 
 
-/*sana*/
-.projet{
-  grid-row: 2/4;
-  grid-column: 1/4;
-}
-.sousgrid1{
-  display: grid;
-  grid-template-columns: 3;
-  grid-template-rows: 2;
-  gap: 15 px;
-}
-
-.sousgrid1 h2{
-  grid-column: 1/4;
-  grid-row: 1/2;
-}
-
-.sousgrid1 .blo1{
-  grid-column: 1/2;
-  grid-row: 2/3;
-}
-
-.sousgrid1 .blo2{
-  grid-column: 2/3;
-  grid-row: 2/3;
-}
-
-.sousgrid1 .blo3 {
-  grid-column: 3/4;
-  grid-row: 2/3;
-}
+/* !!!!!!!!!!!!!! SYRINE header FORMULAIRE DE CONTACT !!!!!!!!!!!!!! */
 
 
-/*emmy */
+/* !!!!!!!!!!!!!! SYRINE footer !!!!!!!!!!!!!! */
 
-.competences{
- grid-column: 1/4;
- grid-row: 2/3;
-}
-.wrapper{
-    display: grid;
-    grid-template-rows: 2;
-    grid-template-columns: 3;
-}
-.wrapper .bloc1{
-  grid-column:4/4;
-  grid-row: 1/2;
-}
-  
-.bloc1 img{
-  background-size: 150px;
-  width: 100px;
-  height: 100px;
-  border: 2px solid;
-  color: yellow;
+footer {
+  background-color: #d6ccc2;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
 }
 
-.wrapper2{
-  display: grid;
-  grid-template-rows: 2;
-  grid-template-columns: 3;
+.footer-content {
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-.wrapper2 .bloc2{
-  display:grid;
-  grid-column: 4/4;
-  grid-row: 1/2;
+/* !!!!!!!!!!!!!! SYRINE FOOTER Newsletter !!!!!!!!!!!!!! */
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.bloc2 img{
-  background-size: 150px;
-  width: 100px;
-  height: 100px;
-  border: 2px solid;
-  color: yellow;
-  
-}
-.styled1{
-  background-color:grey ;
-  color:yellow
+.newsletter-form input[type="email"] {
+  padding: 10px;
+  margin: 10px 0;
+  width: 80%;
+  max-width: 300px;
+  border: none;
+  border-radius: 5px;
 }
 
-.footer {
-    background-color: #E5E5E5;
-    color: black;
-    display: grid;
-    align-items: center;
-    padding: 10px;
-    width: 100%;
-    grid-column: 1 / 4;
-    grid-row: 4 / 5;
-    display: block;
+.newsletter-form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #F5EBE1;;
+  color: black;
+  cursor: pointer;
+  font-size: 16px;
 }
 
-.footer-left a {
-margin-right: auto;
-grid-column: 1 / 4;
-grid-row: 4 / 5;
+.newsletter-form button:hover {
+  background-color: #a98467;
 }
 
-.footer-center {
+/* !!!!!!!!!!!!!! SYRINE FOOTER Newsletter !!!!!!!!!!!!!! */
 
-    grid-column: 1 / 4;
-    grid-row: 4 / 5;
+/* !!!!!!!!!!!!!! SYRINE FOOTER Mentions légales !!!!!!!!!!!!!! */
+
+.mentions-legales {
+  margin-top: 20px;
+  font-size: 12px;
 }
 
-
-.logo {
-    display: grid;
-    width: 50px;
-    height: 50px;
+.mentions-legales strong {
+  font-weight: bold;
 }
-#footerlogo {
 
-    grid-column: 1 / 4;
-    grid-row: 4 / 5;
-    align-items: center;
+.mentions-legales a {
+  color: white;
+  text-decoration: none;
 }
+
+.mentions-legales a:hover {
+  text-decoration: underline;
+}
+
+/* !!!!!!!!!!!!!! SYRINE FOOTER Mentions légales !!!!!!!!!!!!!! */
+
+
+/* !!!!!!!!!!!!!! SYRINE FOOTER Réseaux sociaux  !!!!!!!!!!!!!! */
+
+.social-media {
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.social-media a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-media a:hover {
+  color: #a98467;
+}
+
+/* !!!!!!!!!!!!!! SYRINE FOOTER Réseaux sociaux  !!!!!!!!!!!!!! */

@@ -1,73 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="stylesheet" href="/assets/css/style.css">
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
+
 <body>
     <!-- SYRINE header-->
     <header>
-        <img src="logo.png" alt="logo" id="logo" />
-  </header>
 
-<nav>
-        <ul>
-            <li><a href="portfolio.html"> <b>Accueil</b></a></li>
-            <li><a href="portfolioprojet.html"><b>Mes projets</b> </a></li>
-            <li><a href="portfoliocompetences.html"><b>Mes competences</b></a></li>       
-        </ul>
-</nav>
-<!-- SYRINE accueil-->
-<div id="photoaccueil">
-    <img src="Photo accueil.jpg" alt="photo" id="photoaccueil" width="500px" height="650pxxs"/>
-</div>
+        <div class="containerr">
+            <div class="logo" href="index.html"> <img src="./assets/images/logo.png" alt="logo">
+            </div>
+            <nav id="espace">
 
-    <div id="apropos">
-        <p> 26 ans, je suis actuellement en reconversion pour travailler dans le milieu du développement web.
-            Suite à un bac +2 développeur web à la Digital School de Brest, j’ai pu acquérir les bases de plusieurs langages web (HTML, CSS, Javascript, PHP), la gestion de bases de données mais aussi l’utilisation de logiciels tels que Illustrator, Blender ou Figma que j’utilise régulièrement pour créer des maquettes interactives.
-            J’ai ensuite pu exercer et améliorer ces connaissances avec un stage de 3 mois aux côtés d’un développeur web expérimenté.
-            J’aimerais maintenant continuer ma formation avec une troisième année en bachelor « Développement web » en alternance toujours à la Digital School. 
+                <a href="accueil.html">Accueil</a>
+                <a href="projet.html">Projets</a>
+                <a href="competence.html">Compétences</a>
+
+            </nav>
+
+
+        </div>
+
+    </header>
+
+    <!-- SYRINE header-->
+
+    <main>
+        <!-- SYRINE accueil-->
+        
+        <form role="form" id="contactForm" method="POST" novalidate>
+            
+            <h2>CONTACTEZ MOI </h2>
+    
+            <div class="form-container">
+                
+                <img id="maphoto" src="./assets/images/Photo accueil.jpg" alt="image accueil">
+                
+                
+
+                <div class="controls">
+                    
+                    <div class="form-group">
+                        <label for="name">
+                            <i class="fa-solid fa-user"></i> Nom et prénom
+                        </label>
+                        <input id="name" type="text" name="name" placeholder="Nom et Prénom *" required>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">
+                            <i class="fa-solid fa-at"></i> Email
+                        </label>
+                        <input id="email" type="email" name="email" placeholder="Saisissez votre email *" required>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">
+                            <i class="fa-solid fa-comment-dots"></i> Message
+                        </label>
+                        <textarea id="message" name="message" placeholder="Saisissez votre message *" rows="3"
+                            required></textarea>
+
+                    </div>
+
+                    <div class="text-center">
+                        <div id="msgSubmit" class="h5 text-primary hidden"></div>
+                        <input type="submit" class="btn-send" id="submit" value="Envoyer">
+                    </div>
+                </div>
+            </div>
+        </form>
+
+    </main>
+
+    <!-- SYRINE FOOTER -->
+    <footer>
+        <!--NEWSLETTER -->
+
+        <div class="footer-content">
+            <h2>Ne ratez pas mes derniers projets !</h2>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Votre email" required>
+                <button type="submit">S'inscrire</button>
+            </form>
+
+            <!--NEWSLETTER -->
+        </div>
+
+        <!-- MENTIONS LEGALES  -->
+
+        <p class="mentions-legales">
+            <strong> Mentions Légales: </strong>
+            Cet exercice est mis à disposition pour l'usage personnel des étudiants.<br>
+            Il est interdit <b>de le modifier</b> - <b>de le diffuser</b>, y compris <b>sur le web </b> - <b>de se
+                l'attribuer </b>- ou <b>de l'utiliser à des fins commerciales et autres</b>. <br>
+            Les autorisations au-delà du champ de cette licence peuvent être obtenues auprès de <a href="#"> Genesis
+                Technology</a>
         </p>
 
-</div>
-    
-    <div class="contact">
-        <h2> Me contacter </h2>
-
-    <form action="#" method="post" class="contact-form">
-        <label for="name">Nom, Prenom</label>
-        <input type="text" id="name" name="name" required>
-
-        
-        <label for="email">Email :</label>
-        <input type="email" id="email" name="email" required>
-        
-        <label for="subject">Sujet :</label>
-        <input type="text" id="subject" name="subject">
-        
-        <label for="message">Message :</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-        
-        <button type="submit">Envoyer </button>
-    </form>
-    </div>
-</div>
-    <footer class="footer" id="footerlogo">
-            <a href="https://github.com/" target="_blank">
-                <img src="icone github.png" alt="GitHub Logo" class="logo">
-            </a>
-            <a href="https://www.linkedin.com/" target="_blank">
-                <img src="icone linkedin.png" alt="LinkedIn Logo" class="logo">
-            </a>
+        <!-- RESEAUX SOCIAUX -->
+        <div class="social-media">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin-in"></a>
         </div>
-        <div class="footer-center">
-            <p>Mentions légales</p>
-        </div>
+        <!-- RESEAUX SOCIAUX -->
+
+
     </footer>
+    <!-- SYRINE FOOTER -->
 </body>
+
 </html>
